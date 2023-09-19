@@ -1,0 +1,43 @@
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.exe
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.deps.json
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.runtimeconfig.json
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.dll
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.pdb
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.csproj.AssemblyReference.cache
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.AssemblyInfoInputs.cache
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.AssemblyInfo.cs
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.csproj.CoreCompileInputs.cache
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.dll
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\refint\Ordenadores.dll
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.pdb
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.genruntimeconfig.cache
+C:\Users\DRiva\source\repos\Ordenadores\Ordenadores\obj\Debug\net6.0\ref\Ordenadores.dll
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.exe
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.deps.json
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.runtimeconfig.json
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.dll
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\bin\Debug\net6.0\Ordenadores.pdb
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.AssemblyInfoInputs.cache
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.AssemblyInfo.cs
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.csproj.CoreCompileInputs.cache
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.dll
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\refint\Ordenadores.dll
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.pdb
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\Ordenadores.genruntimeconfig.cache
+C:\Users\DRiva\Downloads\OrdenadoresCompleto_DanielRivas (1)\Ordenadores\Ordenadores\obj\Debug\net6.0\ref\Ordenadores.dll
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\bin\Debug\net6.0\Ordenadores.exe
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\bin\Debug\net6.0\Ordenadores.deps.json
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\bin\Debug\net6.0\Ordenadores.runtimeconfig.json
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\bin\Debug\net6.0\Ordenadores.dll
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\bin\Debug\net6.0\Ordenadores.pdb
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.AssemblyInfoInputs.cache
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.AssemblyInfo.cs
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.csproj.CoreCompileInputs.cache
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.dll
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\refint\Ordenadores.dll
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.pdb
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\Ordenadores.genruntimeconfig.cache
+C:\Users\DRiva\Downloads\ComponentesTiendaMVC\Ordenadores\obj\Debug\net6.0\ref\Ordenadores.dll

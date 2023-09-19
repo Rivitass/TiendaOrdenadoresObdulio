@@ -1,0 +1,145 @@
+﻿@model ComponentesTiendaMVC.Models.Componente
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 60px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        th {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .scrollable-container {
+            max-height: 400px; 
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1 class="title text-center">Editar</h1>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="scrollable-container">
+                        <div class="form-group">
+                            <label asp-for="Descripcion" class="control-label"></label>
+                            <input asp-for="Descripcion" class="form-control" />
+                            <span asp-validation-for="Descripcion" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NumeroSerie" class="control-label"></label>
+                            <input asp-for="NumeroSerie" class="form-control" />
+                            <span asp-validation-for="NumeroSerie" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Precio" class="control-label"></label>
+                            <input asp-for="Precio" class="form-control" />
+                            <span asp-validation-for="Precio" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Cores" class="control-label"></label>
+                            <input asp-for="Cores" class="form-control" />
+                            <span asp-validation-for="Cores" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Grados" class="control-label"></label>
+                            <input asp-for="Grados" class="form-control" />
+                            <span asp-validation-for="Grados" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Almacenamiento" class="control-label"></label>
+                            <input asp-for="Almacenamiento" class="form-control" />
+                            <span asp-validation-for="Almacenamiento" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TipoComponente" class="control-label">1:Procesador, 2: Memoria 3: Disco Duro</label>
+                            <input asp-for="TipoComponente" class="form-control" />
+                            <span asp-validation-for="TipoComponente" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="OrdenadorId" class="control-label"></label>
+                            <input asp-for="OrdenadorId" class="form-control" />
+                            <span asp-validation-for="OrdenadorId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group button-group">
+                            <input type="submit" value="Guardar" class="btn btn-primary" />
+                            <a class="btn btn-secondary" asp-action="Index">Volver atrás</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

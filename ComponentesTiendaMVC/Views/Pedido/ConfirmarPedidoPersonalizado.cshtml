@@ -1,0 +1,18 @@
+﻿@*@model ComponentesTiendaMVC.Models.Ordenador
+
+
+<h2>Confirmar Pedido Personalizado</h2>
+
+<div>
+    <p>Has seleccionado los siguientes Componentes para tu Pedido Personalizado:</p>
+    <ul>
+        @foreach (var componente in Model.Componentes)
+        {
+            <li>@componente.DescripcionOrdenador - @componente.Precio €</li>
+        }
+    </ul>
+</div>
+
+<form asp-controller="Pedido" asp-action="ConfirmarPedidoPersonalizado" method="post">
+    <button class="btn btn-success">Confirmar Pedido</button>
+</form>*@

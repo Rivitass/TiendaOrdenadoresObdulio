@@ -1,0 +1,165 @@
+﻿@model IEnumerable<ComponentesTiendaMVC.Models.Componente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        th {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Tienda de Obdulio</h1>
+
+        <div class="description">
+            <a class="btn btn-primary" asp-action="Create">Crear un nuevo Componente</a>
+            <a class="btn btn-secondary ml-2" asp-action="Home">Volver atrás</a>
+        </div>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        Descripción
+                    </th>
+                    <th>
+                        Número de Serie
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                    <th>
+                        Cores
+                    </th>
+                    <th>
+                        Grados
+                    </th>
+                    <th>
+                        Almacenamiento
+                    </th>
+                    <th>
+                        Tipo de Componente
+                    </th>
+                    <th>
+                        OrdenadorIdOrdenador
+                    </th>
+                    <th>
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Descripcion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumeroSerie)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Precio)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Cores)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Grados)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Almacenamiento)
+                        </td>
+                        <td>
+                            @Enum.GetName(typeof(TipoComponente), item.TipoComponente)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrdenadorId)
+                        </td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id">Detalles</a>
+                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        © 2023 Tienda de Componentes
+    </div>
+
+</body>
+</html>

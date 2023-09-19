@@ -1,0 +1,21 @@
+﻿@*@model List<Componente>
+
+<h2>Realizar Pedido Personalizado</h2>
+
+<form asp-controller="Pedido" asp-action="ConfirmarPedidoPersonalizado" method="post">
+    <div class="form-group">
+        <label>Selecciona los Componentes para el Pedido Personalizado:</label>
+        <div class="form-check">
+            @foreach (var componente in Model)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="componentesSeleccionados" value="@componente.IdOrdenador" id="componente-@componente.IdOrdenador">
+                    <label class="form-check-label" for="componente-@componente.IdOrdenador">@componente.DescripcionOrdenador - @componente.Precio €</label>
+                </div>
+            }
+        </div>
+    </div>
+    <input type="hidden" name="ordenadorIdOrdenador" value="@ViewBag.OrdenadorIdOrdenador" />
+    <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
+</form>
+*@

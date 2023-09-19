@@ -1,0 +1,162 @@
+﻿@model IEnumerable<ComponentesTiendaMVC.Models.Ordenador>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2%;
+            color: #343a40;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 2%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+            .table th,
+            .table td {
+                padding: 0.75rem;
+                vertical-align: top;
+                border-top: 1px solid #dee2e6;
+            }
+
+            .table th {
+                background-color: #343a40;
+                color: #ffffff;
+                text-align: inherit;
+            }
+
+            .table a {
+                text-decoration: none;
+            }
+
+                .table a:hover {
+                    text-decoration: underline;
+                }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-secondary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        /* Center buttons */
+        .center-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2%;
+        }
+
+        /* Adjust button colors */
+        .btn-create {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff; /* Text color */
+        }
+
+        .btn-back {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            color: #fff; /* Text color */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Ordenadores</h1>
+
+        <div class="description">
+            <a class="btn btn-create" asp-action="Create">Crear un nuevo Ordenador</a>
+            <a class="btn btn-back" asp-controller="Componente" asp-action="Home">Volver atrás</a>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IdOrdenador)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.DescripcionOrdenador)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IdOrdenador)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DescripcionOrdenador)
+                        </td>
+
+                        <td>
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.IdOrdenador">Editar</a>
+                            <a class="btn btn-secondary ml-2" asp-action="Details" asp-route-id="@item.IdOrdenador">Detalles</a>
+                            <a class="btn btn-danger ml-2" asp-action="Delete" asp-route-id="@item.IdOrdenador">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

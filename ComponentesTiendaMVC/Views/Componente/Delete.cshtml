@@ -1,0 +1,149 @@
+﻿@model ComponentesTiendaMVC.Models.Componente
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .text-center {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .mt-4 {
+            margin-top: 4rem;
+        }
+
+        .form-group {
+            margin-bottom: 60px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title text-center">Eliminar</h1>
+
+        <div class="text-center mt-4">
+            <h4>Componente</h4>
+            <hr />
+            <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroSerie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumeroSerie)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cores)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cores)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Grados)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Grados)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Almacenamiento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Almacenamiento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TipoComponente)
+        </dt>
+        <dd class="col-sm-10">
+            @Enum.GetName(typeof(TipoComponente), Model.TipoComponente)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrdenadorId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrdenadorId)
+        </dd>
+            </dl>
+        </div>
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <div class="text-center mt-4">
+                <input type="submit" value="Delete" class="btn btn-danger" />
+                <a asp-action="Index" class="btn btn-secondary ml-2">Volver atrás</a>
+            </div>
+        </form>
+    </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

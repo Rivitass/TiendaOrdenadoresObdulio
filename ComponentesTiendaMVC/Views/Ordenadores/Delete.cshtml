@@ -1,0 +1,102 @@
+﻿@model ComponentesTiendaMVC.Models.Ordenador
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2%;
+            color: #343a40;
+        }
+
+        .row-details {
+            margin-top: 2%;
+            border-top: 1px solid #dee2e6;
+            padding-top: 1rem;
+        }
+
+        .dt {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .dd {
+            color: #6c757d;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        /* Adjust button colors */
+        .btn-back {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            color: #fff; /* Text color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Eliminar</h1>
+
+        <h3>¿Estás seguro de querer borrar este ordenador?</h3>
+        <div class="row-details">
+            <h4>Componente</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2 dt">
+                    @Html.DisplayNameFor(model => model.DescripcionOrdenador)
+                </dt>
+                <dd class="col-sm-10 dd">
+                    @Html.DisplayFor(model => model.DescripcionOrdenador)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="IdOrdenador" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                <a class="btn btn-back ml-2" asp-action="OrdenadorIndex">Volver atrás</a>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿@model IEnumerable<ComponentesTiendaMVC.Models.Componente>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+
+        .btn {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Tienda de Obdulio</h1>
+
+        <div class="description">
+            <a class="btn btn-primary" asp-action="Index">Ver Componentes</a>
+            <a class="btn btn-secondary ml-2" asp-controller="Ordenadores" asp-action="OrdenadorIndex">Ver Ordenadores</a>
+            <a class="btn btn-info ml-2" asp-controller="Ordenadores" asp-action="OrdenadorComponentes">Ver Ordenadores con componentes</a>
+@*            <a class="btn btn-info ml-2" asp-controller="Pedido" asp-action="PedidoPersonalizado">Realizar un pedido</a>*@
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2023 Tienda de Ordenadores
+    </div>
+
+</body>
+</html>

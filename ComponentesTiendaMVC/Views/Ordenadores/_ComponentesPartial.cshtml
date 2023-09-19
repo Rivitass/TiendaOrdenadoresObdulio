@@ -1,0 +1,97 @@
+﻿@model List<Componente>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2%;
+            color: #343a40;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        .component-list {
+            margin-top: 2%;
+        }
+
+        .component-item {
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+            .component-item:last-child {
+                border-bottom: none;
+            }
+
+        .component-description {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .component-price {
+            color: #17a2b8;
+        }
+
+        .total-price {
+            margin-bottom: 15%;
+            font-weight: bold;
+            color: #17a2b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="back-button">
+            <a class="btn btn-secondary" asp-controller="Componente" asp-action="Home">Volver atrás</a>
+        </div>
+        @if (Model != null && Model.Count > 0)
+        {
+            <h3 class="title">Componentes del Ordenador</h3>
+            double total = 0;
+            <ul class="component-list">
+                @foreach (var componente in Model)
+                {
+                    <li class="component-item">
+                        <span class="component-description">Descripción:</span> @componente.Descripcion<br />
+                        <span class="component-description">Número de Serie:</span> @componente.NumeroSerie<br />
+                        <span class="component-description">Precio:</span> <span class="component-price">@componente.Precio €</span><br />
+                        <span class="component-description">Cores:</span> @componente.Cores<br />
+                        <span class="component-description">Grados:</span> @componente.Grados<br />
+                        <span class="component-description">Almacenamiento:</span> @componente.Almacenamiento<br />
+                        <span class="component-description">Tipo de componente:</span> @Enum.GetName(typeof(TipoComponente), componente.TipoComponente)<br />
+                    </li>
+                    total += componente.Precio;
+                }
+            </ul>
+            <h4 class="total-price">Precio total de este Ordenador: @total €</h4>
+        }
+        else
+        {
+            <p>No se han encontrado componentes para este ordenador.</p>
+        }
+    </div>
+
+</body>
+</html>

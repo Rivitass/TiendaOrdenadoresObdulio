@@ -1,0 +1,94 @@
+﻿@model List<Componente>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2%;
+            color: #343a40;
+        }
+
+        .dropdown-container {
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        #componentesContainer {
+            margin-top: 2%;
+        }
+
+        .component-item {
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+            .component-item:last-child {
+                border-bottom: none;
+            }
+
+        .component-description {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .component-price {
+            color: #17a2b8;
+        }
+
+        .total-price {
+            margin-top: 2%;
+            font-weight: bold;
+            color: #17a2b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="dropdown-container">
+            @Html.DropDownList("ordenadorId", (SelectList)ViewBag.Ordenadores, "Seleccione un ordenador", new { id = "ddlOrdenador" })
+        </div>
+        <div id="componentesContainer">
+        </div>
+    </div>
+
+    @section scripts {
+        <script>
+            $(document).ready(function () {
+                $("#ddlOrdenador").change(function () {
+                    var ordenadorId = $(this).val();
+                    if (ordenadorId) {
+                        cargarComponentes(ordenadorId);
+                    } else {
+                        $("#componentesContainer").empty();
+                    }
+                });
+
+                function cargarComponentes(ordenadorId) {
+                    $.post("@Url.Action("CargarComponentes")", { ordenadorId: ordenadorId }, function (data) {
+                        $("#componentesContainer").html(data);
+                    });
+                }
+            });
+        </script>
+    }
+</body>
+</html>

@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ComponentesTiendaMVC
+build_property.RootNamespace = ComponentesTiendaMVC
+build_property.ProjectDir = C:\Users\DRiva\Downloads\ComponentesTiendaMVC\ComponentesTiendaMVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\DRiva\Downloads\ComponentesTiendaMVC\ComponentesTiendaMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Componente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Componente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Componente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Componente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Componente/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Componente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/OrdenadorComponentes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcT3JkZW5hZG9yQ29tcG9uZW50ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/OrdenadorIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcT3JkZW5hZG9ySW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Ordenadores/_ComponentesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5hZG9yZXNcX0NvbXBvbmVudGVzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Pedido/ConfirmarPedidoPersonalizado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENvbmZpcm1hclBlZGlkb1BlcnNvbmFsaXphZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Pedido/PedidoPersonalizado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXFBlZGlkb1BlcnNvbmFsaXphZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Shared/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Shared/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DRiva/Downloads/ComponentesTiendaMVC/ComponentesTiendaMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3rcyuur2oh
